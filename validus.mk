@@ -1,7 +1,10 @@
 $(call inherit-product, device/samsung/jfltexx/full_jfltexx.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common Validus stuff.
 $(call inherit-product, vendor/validus/config/common_full_phone.mk)
+
+# Add CAF stuff
+$(call inherit-product, vendor/validus/config/caf_fw.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
   PRODUCT_NAME=jfltexx \
